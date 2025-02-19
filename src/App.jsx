@@ -46,7 +46,7 @@ function App() {
             <TableComponent />
           </div>
           <div className="mb-12">
-            <p>日期選擇</p>
+            <p>日期選擇，可接受鍵盤輸入</p>
             <DateComponent />
           </div>
         </div>
