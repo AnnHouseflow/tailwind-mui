@@ -33,12 +33,13 @@ function App() {
             <Drawer open={open} onClose={toggleDrawer(false)}>
               <MenuOpen />
             </Drawer>
-            <h2 className='text-lg font-bold'>e 指成交</h2>
+            <h2 className='text-lg font-bold'>Tailwind + MUI</h2>
             <ThemeProvider theme={customTheme}>
               <Button variant="contained" color="primary">Text</Button>
             </ThemeProvider>
           </nav>
           <div className="px-5">
+            <h1 className="text-lg font-bold hidden md:block">Tailwind + MUI</h1>
             <p className='mb-12 font-bold text-info'>新上架 <span className='text-tertiary'>135</span> 筆資料</p>
             <div className="mb-12">
               <Pagination count={10} defaultPage={5} siblingCount={1} color="primary" onChange={(e, page) => setPage(page)} /> <span>目前在第 {page} 頁</span>
