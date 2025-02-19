@@ -4,8 +4,8 @@ import { useMediaQuery } from '@mui/material';
 
 const baseColumns = [
     { field: 'id', headerName: 'ID', flex: 0.5, minWidth: 10 },
-    { field: 'firstName', headerName: 'First name', flex: 1 },
-    { field: 'lastName', headerName: 'Last name', flex: 1 },
+    { field: 'firstName', headerName: '名字', flex: 1 },
+    { field: 'lastName', headerName: '姓氏', flex: 1 },
     {
         field: 'age',
         headerName: 'Age',
@@ -14,7 +14,7 @@ const baseColumns = [
     },
     {
         field: 'fullName',
-        headerName: 'Full name',
+        headerName: '全名',
         description: 'This column has a value getter and is not sortable.',
         sortable: false,
         flex: 1.5,
@@ -42,23 +42,23 @@ export default function TableComponent() {
 
 
     return (
-        <Paper sx={{ height: 400, width: '100%' }}>
-            <DataGrid
-                rows={rows}
-                columns={columns}
-                initialState={{
-                    pagination: {
-                        paginationModel: {
-                            pageSize: 5,
+            <Paper sx={{ height: 400, width: '100%' }}>
+                <DataGrid
+                    rows={rows}
+                    columns={columns}
+                    initialState={{
+                        pagination: {
+                            paginationModel: {
+                                pageSize: 5,
+                            },
                         },
-                    },
-                }}
-                pageSizeOptions={[5]}
-                checkboxSelection
-                sx={{ border: 0 }}
-                paginationMode="server"
-                rowCount={rows.length}
-            />
-        </Paper>
+                    }}
+                    pageSizeOptions={[5]}
+                    checkboxSelection
+                    sx={{ border: 0 }}
+                    paginationMode="server"
+                    rowCount={rows.length}
+                />
+            </Paper>
     );
 }
