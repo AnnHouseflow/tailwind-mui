@@ -4,7 +4,7 @@
 ## 版本
 - "@mui/material": "^6.4.2",
 - "@mui/icons-material": "^6.4.2"
-- "tailwindcss": "^3.4.17",
+- "tailwindcss": "^4.0.3"，
 - "vite": "^6.0.5"
 - "react": "^18.3.1"
 
